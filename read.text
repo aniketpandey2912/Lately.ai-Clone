@@ -4,3 +4,28 @@ Unit : 4 (RCT-101)
 Project : acceptable-popcorn-8320
 IA : Sheelu Kumar
 IA Github usename : sheeluofficial
+
+***********************************************************************************************************************************************
+### Problem-1 :- I was not getting all the branches locally even after '''git pull'''
+Solution:- 
+1- git ls-remote origin
+
+output was :
+d3805aa2e1572e9ac381a530bc5415274d68397a        HEAD
+d3805aa2e1572e9ac381a530bc5415274d68397a        refs/heads/day-2
+d3805aa2e1572e9ac381a530bc5415274d68397a        refs/heads/main
+
+2. git fetch
+
+output was : 
+From https://github.com/aniketpandey2912/acceptable-popcorn-8320
+ * [new branch]      day-2      -> origin/day-2
+
+ 3. git pull
+
+ 4. git checkout day-2
+
+ Solved, now I was able to see the branch locally, but for every branch I had to repeat step 3 and 4.
+
+ 
+***********************************************************************************************************************************************
