@@ -1,3 +1,9 @@
+import { Box } from "@chakra-ui/react";
+
 export function Footer() {
-  return <h1>Footer</h1>;
+  return (
+    <Box h={"300px"} border={"5px solid red"}>
+      Footer
+    </Box>
+  );
 }
