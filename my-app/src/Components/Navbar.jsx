@@ -20,6 +20,8 @@ import {
   Show,
   IconButton,
   Hide,
+  Link,
+  textDecoration,
 } from "@chakra-ui/react";
 
 import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
@@ -28,7 +30,7 @@ export function Navbar() {
   return (
     // navbar container
     <Box
-      border={"1px solid red"}
+      // border={"1px solid red"}
       h={"auto"}
       bgColor={"rgb(61 66 75 / 7%)"}
       px={{ sm: "5px", md: "15px", lg: "20px" }}
@@ -47,10 +49,13 @@ export function Navbar() {
           >
             {/* logo-box */}
             <Center>
-              <Image
-                src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
-                boxSize="100px"
-              ></Image>
+              {/* click on image will take back to home page */}
+              <Link href="/">
+                <Image
+                  src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
+                  boxSize="100px"
+                ></Image>
+              </Link>
             </Center>
 
             {/* Menu box - using show and hide as per screen size */}
@@ -85,13 +90,18 @@ export function Navbar() {
                               content creation experience.
                             </MenuItem>
                             <MenuItem fontWeight={"semibold"} color={"teal"}>
-                              HubSpot Marketing Hub
+                              {/* it will take to my product page and rest of the link under product section are linked to original website */}
+                              <Link href="/product">HubSpot Marketing Hub</Link>
                             </MenuItem>
                             <MenuItem fontWeight={"semibold"} color={"teal"}>
-                              Hotsuite
+                              <Link href="https://www.lately.ai/integrations/social-content-integration-with-hootsuite">
+                                Hotsuite
+                              </Link>
                             </MenuItem>
                             <MenuItem fontWeight={"semibold"} color={"teal"}>
-                              UpContent
+                              <Link href="https://www.lately.ai/integrations/social-content-integration-with-upcontent">
+                                UpContent
+                              </Link>
                             </MenuItem>
                           </GridItem>
 
@@ -177,13 +187,41 @@ export function Navbar() {
                         Resources
                       </MenuButton>
                       <MenuList>
-                        <MenuItem>Customer Stories</MenuItem>
-                        <MenuItem>Lately Office Hours Sign-Up</MenuItem>
-                        <MenuItem>Lately LIVE Replays</MenuItem>
-                        <MenuItem>How to Position ANYTHING</MenuItem>
-                        <MenuItem>Ebooks</MenuItem>
-                        <MenuItem>Blog</MenuItem>
-                        <MenuItem>Help Center</MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/resources/customer-stories">
+                            Customer Stories
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/resources/lately-office-hours-signup">
+                            Lately Office Hours Sign-Up
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/resources/lately-live-videos">
+                            Lately LIVE Replays
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/resources/how-to-position-anything">
+                            How to Position ANYTHING
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/resources/ebooks">
+                            Ebooks
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/resources/blog">
+                            Blog
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/resources/help-center">
+                            Help Center
+                          </Link>
+                        </MenuItem>
                       </MenuList>
                     </Menu>
                   </GridItem>
@@ -200,22 +238,47 @@ export function Navbar() {
                         Company
                       </MenuButton>
                       <MenuList>
-                        <MenuItem>About</MenuItem>
-                        <MenuItem>Team Lately</MenuItem>
-                        <MenuItem>Press & News</MenuItem>
-                        <MenuItem>Lately Professional Services</MenuItem>
-                        <MenuItem>Contact Us</MenuItem>
+                        <MenuItem>
+                          <Link href="/company"> About</Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/company/team">
+                            Team Lately
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/company/press">
+                            Press & News
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/company/lately-professional-services">
+                            Lately Professional Services
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link href="https://www.lately.ai/company/contact">
+                            Contact Us
+                          </Link>
+                        </MenuItem>
                       </MenuList>
                     </Menu>
                   </GridItem>
                 </Center>
 
                 <Center>
-                  <GridItem w="100%" h="10">
+                  <GridItem w="100%">
                     <Menu>
-                      <MenuButton as={Button} p={1}>
+                      {/* <MenuButton as={Link} p={1}> */}
+                      <Link
+                        href="/pricing"
+                        _hover={{ textDecoration: "none" }}
+                        fontWeight="500"
+                      >
+                        {" "}
                         Pricing
-                      </MenuButton>
+                      </Link>
+                      {/* </MenuButton> */}
                     </Menu>
                   </GridItem>
                 </Center>
@@ -236,11 +299,27 @@ export function Navbar() {
                     borderRadius="100%"
                   />
                   <MenuList>
-                    <MenuItem icon={<ChevronDownIcon />}>Prdoducts</MenuItem>
-                    <MenuItem icon={<ChevronDownIcon />}>Industries</MenuItem>
-                    <MenuItem icon={<ChevronDownIcon />}>Partners</MenuItem>
-                    <MenuItem icon={<ChevronDownIcon />}>Resources</MenuItem>
-                    <MenuItem icon={<ChevronDownIcon />}>Company</MenuItem>
+                    <MenuItem>
+                      <Link href="/product">Prdoducts</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link href="https://www.lately.ai/industries/industry-overview">
+                        Industries
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      {/* dummy link */}
+                      <Link href="https://www.lately.ai/integrations/social-content-integration-with-hubspot-marketing-hub">
+                        Partners
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      {/* Pricing - dummy link */}
+                      <Link href="/pricing">Resources</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link href="/company">Company</Link>
+                    </MenuItem>
                   </MenuList>
                 </Menu>
               </Center>
@@ -269,7 +348,7 @@ export function Navbar() {
               <Button
                 colorScheme="teal"
                 variant="outline"
-                _hover={{ bgColor: "teal", color: "white" }}
+                _hover={{ bgColor: "green.400", color: "white" }}
                 fontSize={{
                   base: "12px",
                   sm: "14px",
@@ -277,11 +356,13 @@ export function Navbar() {
                   lg: "18px",
                 }}
               >
-                Get Started
+                <Link href="/signup" _hover={{ textDecoration: "none" }}>
+                  Get Started
+                </Link>
               </Button>
               <Button
                 color={"black"}
-                _hover={{ color: "teal" }}
+                _hover={{ color: "green.400" }}
                 fontSize={{
                   base: "12px",
                   sm: "14px",
@@ -289,7 +370,9 @@ export function Navbar() {
                   lg: "18px",
                 }}
               >
-                LOG IN
+                <Link href="/login" _hover={{ textDecoration: "none" }}>
+                  LOG IN
+                </Link>
               </Button>
             </Stack>
           </Center>

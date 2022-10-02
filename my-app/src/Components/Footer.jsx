@@ -230,7 +230,7 @@ export function Footer() {
   return (
     <Container
       h={"auto"}
-      border={"1px solid red"}
+      // border={"1px solid red"}
       bgColor="skyblue"
       maxW={"container.2xl"}
       bg={"#F0FFF4"}
@@ -358,11 +358,13 @@ export function Footer() {
             {/* logo-left */}
             <Box p="4">
               <Center>
-                <Image
-                  src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
-                  w="100px"
-                  h={"auto"}
-                ></Image>
+                <Link href="/">
+                  <Image
+                    src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
+                    w="100px"
+                    h={"auto"}
+                  ></Image>
+                </Link>
               </Center>
             </Box>
 

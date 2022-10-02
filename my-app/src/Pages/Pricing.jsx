@@ -26,7 +26,7 @@ export function Pricing() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        border={"1px solid green"}
         px={{ base: 10, lg: 20, lg: 30, lg: 40 }}
         bg="green.900"
       >
@@ -60,7 +60,7 @@ export function Pricing() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={{ base: 10, lg: 20, lg: 30, lg: 40 }}
         bg="#fff"
       >
@@ -684,11 +684,11 @@ export function Pricing() {
         </Grid>
       </Container>
 
-      {/* Contact Us Section */}
+      {/* 3 product boxes Us Section */}
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         bg="#e8f8f2"
       >
@@ -761,7 +761,7 @@ export function Pricing() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         // px={10}
         bg="rgb(23 76 67 / 90%)"
       >
@@ -785,7 +785,7 @@ export function Pricing() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         bg="green.900"
       >

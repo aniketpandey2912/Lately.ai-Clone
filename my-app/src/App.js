@@ -11,8 +11,6 @@ function App() {
       <Navbar />
       <AllRouters />
       <Footer />
-      {/* <Signup /> */}
-      {/* <Login /> */}
     </div>
   );
 }
