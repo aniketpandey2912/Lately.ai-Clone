@@ -8,6 +8,7 @@ import {
   Image,
   Text,
   VStack,
+  Link,
 } from "@chakra-ui/react";
 
 export function Product() {
@@ -17,7 +18,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={40}
         bg="green.900"
       >
@@ -42,7 +43,13 @@ export function Product() {
                 borderColor={"lightgreen"}
                 _hover={{ bg: "green.400" }}
               >
-                TRY IT FREE
+                {/* dummy for now, otherwise it has check if user is authorised only then it shoulod be redirecting to provided link page otherwise it will take to signup page */}
+                <Link
+                  href="https://app.lately.ai/#/app/signup"
+                  _hover={{ textDecoration: "none" }}
+                >
+                  TRY IT FREE
+                </Link>
               </Button>
             </Box>
           </Center>
@@ -53,7 +60,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"1px solid blue"}
+        // border={"1px solid blue"}
         px={10}
         bg="#daece6"
       >
@@ -99,7 +106,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         // bg="green.900"
       >
@@ -129,7 +136,12 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link
+                    href="https://www.lately.ai/product/social-media-marketing-ai-software-solution"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -149,7 +161,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         // bg="green.900"
       >
@@ -188,7 +200,12 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link
+                    href="https://www.lately.ai/product/social-media-content-writing-ai-software-solution"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -200,7 +217,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         // bg="green.900"
       >
@@ -231,7 +248,12 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link
+                    href="https://www.lately.ai/product/social-selling-ai-software-solution"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -251,7 +273,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         // bg="green.900"
       >
@@ -287,7 +309,12 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link
+                    href="https://www.lately.ai/product/social-media-marketing-ai-software-solution"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -299,7 +326,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         // bg="green.900"
       >
@@ -314,7 +341,7 @@ export function Product() {
           >
             <Center w={{ base: "100%", md: "50%" }} h="auto" p={10}>
               <Box>
-                <Heading mb="5">Unlock the Gold</Heading>
+                <Heading mb="5">Social Selling</Heading>
                 <Text mb="5">
                   Ensures messaging is on point as you scale your social media
                   content across sales teams, executives and employees.
@@ -326,7 +353,12 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link
+                    href="https://www.lately.ai/product/social-selling-ai-software-solution"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -346,7 +378,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         // bg="green.900"
       >
@@ -382,7 +414,12 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link
+                    href="https://www.lately.ai/product/social-media-content-analytics-software"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -399,8 +436,9 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
+        py={5}
         // bg="green.900"
       >
         <Box>
@@ -438,10 +476,16 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link
+                    href="https://www.lately.ai/product/parent-child-accounts"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </Button>
               </Box>
             </Center>
+
             <Center w={{ base: "100%", sm: "100%", md: "100%", lg: "30%" }}>
               <Box>
                 <Image
@@ -464,10 +508,16 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link
+                    href="https://www.lately.ai/product/parent-child-accounts"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </Button>
               </Box>
             </Center>
+
             <Center
               w={{ base: "100%", sm: "100%", md: "100%", lg: "30%" }}
               p="10px 0px 10px 0px"
@@ -494,7 +544,9 @@ export function Product() {
                   border={"1px solid lightgreen"}
                   _hover={{ bg: "green.400", color: "white" }}
                 >
-                  LEARN MORE
+                  <Link href="/pricing" _hover={{ textDecoration: "none" }}>
+                    SEE PRICING
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -506,7 +558,7 @@ export function Product() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         bg="green.900"
       >

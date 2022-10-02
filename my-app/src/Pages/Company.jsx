@@ -21,7 +21,7 @@ export function Company() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={40}
         bg="green.900"
       >
@@ -41,7 +41,7 @@ export function Company() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"1px solid blue"}
+        // border={"1px solid blue"}
         px={10}
         bg="#daece6"
       >
@@ -212,7 +212,7 @@ export function Company() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         bg="#e8f8f2"
       >
@@ -297,7 +297,7 @@ export function Company() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"1px solid blue"}
+        // border={"1px solid blue"}
         bg="#daece6"
       >
         <Flex
@@ -318,7 +318,12 @@ export function Company() {
         >
           <Heading>Careers at Lately</Heading>
           <Button colorScheme="green" variant={"solid"}>
-            Messenger
+            <Link
+              href="https://www.linkedin.com/company/latelyai/"
+              _hover={{ textDecoration: "none" }}
+            >
+              JOIN OUR TEAM
+            </Link>
           </Button>
         </Flex>
       </Container>

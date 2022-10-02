@@ -9,6 +9,7 @@ import {
   GridItem,
   Heading,
   Image,
+  Link,
   ListItem,
   Show,
   Text,
@@ -34,7 +35,7 @@ export function Home() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         bg="green.900"
       >
@@ -62,7 +63,13 @@ export function Home() {
                   borderColor={"lightgreen"}
                   _hover={{ bg: "green.400" }}
                 >
-                  TRY IT FREE
+                  {/* dummy for now, otherwise it has check if user is authorised only then it shoulod be redirecting to provided link page otherwise it will take to signup page */}
+                  <Link
+                    href="https://app.lately.ai/#/app/signup"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    TRY IT FREE
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -82,7 +89,7 @@ export function Home() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"3px solid green"}
+        // border={"3px solid green"}
         p={10}
         // bg="green.400"
       >
@@ -116,7 +123,7 @@ export function Home() {
         <Container
           maxW={"100vw"}
           h={"auto"}
-          border={"5px solid pink"}
+          // border={"5px solid pink"}
           px={10}
           bg="#F0FFF4"
         >
@@ -133,7 +140,7 @@ export function Home() {
                 xl: "row",
               }}
             >
-              <Center w="100%" h="auto" p={10} border="1px solid black">
+              <Center w="100%" h="auto" p={10} border="null">
                 <Box>
                   <iframe
                     width="450"
@@ -142,11 +149,11 @@ export function Home() {
                     title="Lately: Professionally Plan Sneak Peek"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                 </Box>
               </Center>
-              <Center w="100%" p={10} border="1px solid black">
+              <Center w="100%" p={10} border="null">
                 <Box textAlign={"left"}>
                   <Heading fontSize={"30px"}>
                     Works with any longform text, audio & video!
@@ -175,7 +182,7 @@ export function Home() {
         <Container
           maxW={"100vw"}
           h={"auto"}
-          border={"5px solid pink"}
+          // border={"5px solid pink"}
           px={10}
           bg="#F0FFF4"
         >
@@ -192,7 +199,7 @@ export function Home() {
                 xl: "row",
               }}
             >
-              <Center w="100%" h="auto" p={10} border="1px solid black">
+              <Center w="100%" h="auto" p={10} border="null">
                 <Box>
                   <iframe
                     width="100%"
@@ -205,7 +212,7 @@ export function Home() {
                   ></iframe>
                 </Box>
               </Center>
-              <Center w="100%" p={10} border="1px solid black">
+              <Center w="100%" p={10} border="null">
                 <Box textAlign={"left"}>
                   <Heading fontSize={"23px"}>
                     Works with any longform text, audio & video!
@@ -234,7 +241,7 @@ export function Home() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"1px solid blue"}
+        // border={"1px solid blue"}
         px={10}
         bg="#daece6"
       >
@@ -281,7 +288,7 @@ export function Home() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"1px solid green"}
+        // border={"1px solid green"}
         p={10}
         bg="#daece6"
       >
@@ -391,7 +398,7 @@ export function Home() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"3px solid blue"}
+        // border={"3px solid blue"}
         p={5}
         // bg="green.100"
       >
@@ -415,7 +422,7 @@ export function Home() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         bg="#e6f6ef"
       >
@@ -448,7 +455,13 @@ export function Home() {
                   fontWeight="700"
                   _hover={{ bg: "white", color: "#00c66b" }}
                 >
-                  GIVE IT A WHIRL
+                  {/* dummy for now, otherwise it has check if user is authorised only then it shoulod be redirecting to provided link page otherwise it will take to signup page */}
+                  <Link
+                    href="https://app.lately.ai/#/app/signup"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    GIVE IT A WHIRL
+                  </Link>
                 </Button>
               </Box>
             </Center>
@@ -468,7 +481,7 @@ export function Home() {
       <Container
         maxW={"100vw"}
         h={"auto"}
-        border={"2px solid blue"}
+        // border={"2px solid blue"}
         px={10}
         bg="green.900"
       >

@@ -10,15 +10,31 @@ import {
   Text,
   Link,
 } from "@chakra-ui/react";
+import { useContext } from "react";
+import { AuthContext } from "../Contexts/AuthContext";
+import { Navigate } from "react-router-dom";
 
 export function Login() {
+  const { isAuth, toggleAuth } = useContext(AuthContext);
+
+  const handleClick = () => {
+    toggleAuth();
+    alert("Login Success");
+  };
+
+  if (isAuth) {
+    return <Navigate to={"/"}></Navigate>;
+  }
+
   return (
     <Container
       maxW={"100vw"}
-      h={"100vmax"}
-      border={"2px solid blue"}
+      h={"auto"}
+      // border={"2px solid blue"}
       bg="#f7f7f7"
       textAlign="left"
+      mt={0}
+      py={20}
     >
       <Box
         height="auto"
@@ -26,7 +42,7 @@ export function Login() {
         m="auto"
         bg="yellow"
         p={{ base: "5", sm: "5", md: "10", lg: "10" }}
-        mt={100}
+        // mt={100}
         bgColor="white"
       >
         {/* heading */}
@@ -46,7 +62,12 @@ export function Login() {
           </Box>
 
           <Box mb="5">
-            <Button colorScheme="green" variant="solid" fontSize="18px">
+            <Button
+              colorScheme="green"
+              variant="solid"
+              fontSize="18px"
+              onClick={handleClick}
+            >
               NEXT
             </Button>
 
@@ -62,7 +83,7 @@ export function Login() {
           </Box>
         </FormControl>
         <Text>
-          Don't have an account yet?{" "}
+          Don't have an account yet?
           <Link href="#" color="teal">
             Sign up now!
           </Link>
