@@ -24,6 +24,8 @@ From https://github.com/aniketpandey2912/acceptable-popcorn-8320
  3. git pull
 
  4. git checkout day-2
+ 
+ 5. git merge main
 
  Solved, now I was able to see the branch locally, but for every branch I had to repeat step 3 and 4.
 
